@@ -22,7 +22,11 @@ parameters[object] (optional) a dictionary object of properties defined in [Ti.D
 
 ## Author
 
-Fred Spencer <fspencer@appcelerator.com>, Appcelerator Inc.
+Fred Spencer
+
+## Feedback and Support
+
+Please direct all questions, feedback, and concerns to [info@appcelerator.com](mailto:info@appcelerator.com?subject=iOS%20Doubleclick%20Module).
 
 ## License
 
