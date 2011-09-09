@@ -22,17 +22,17 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		24FCBD03141A4ECF00F2A9A9 /* TiDoubleclilckModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FCBCFD141A4ECF00F2A9A9 /* TiDoubleclilckModule.m */; };
+		24FCBD04141A4ECF00F2A9A9 /* TiDoubleclickViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FCBCFE141A4ECF00F2A9A9 /* TiDoubleclickViewProxy.m */; };
+		24FCBD05141A4ECF00F2A9A9 /* TiDoubleclickViewProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 24FCBCFF141A4ECF00F2A9A9 /* TiDoubleclickViewProxy.h */; };
+		24FCBD06141A4ECF00F2A9A9 /* TiDoubleclickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FCBD00141A4ECF00F2A9A9 /* TiDoubleclickView.m */; };
+		24FCBD07141A4ECF00F2A9A9 /* TiDoubleclickView.h in Headers */ = {isa = PBXBuildFile; fileRef = 24FCBD01141A4ECF00F2A9A9 /* TiDoubleclickView.h */; };
+		24FCBD08141A4ECF00F2A9A9 /* TiDoubleclickModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 24FCBD02141A4ECF00F2A9A9 /* TiDoubleclickModule.h */; };
 		A27FAAB213D07F0D00FFE9B4 /* GADAdSenseAudioParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = A27FAAAD13D07F0D00FFE9B4 /* GADAdSenseAudioParameters.h */; };
 		A27FAAB313D07F0D00FFE9B4 /* GADAdSenseParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = A27FAAAE13D07F0D00FFE9B4 /* GADAdSenseParameters.h */; };
 		A27FAAB413D07F0D00FFE9B4 /* GADAdViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A27FAAAF13D07F0D00FFE9B4 /* GADAdViewController.h */; };
 		A27FAAB513D07F0D00FFE9B4 /* GADDoubleClickParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = A27FAAB013D07F0D00FFE9B4 /* GADDoubleClickParameters.h */; };
 		A27FAAB613D07F0D00FFE9B4 /* GADRequestError.h in Headers */ = {isa = PBXBuildFile; fileRef = A27FAAB113D07F0D00FFE9B4 /* GADRequestError.h */; };
-		A27FAABD13D07F4300FFE9B4 /* TiDoubleclickModule.h in Headers */ = {isa = PBXBuildFile; fileRef = A27FAAB713D07F4300FFE9B4 /* TiDoubleclickModule.h */; };
-		A27FAABE13D07F4300FFE9B4 /* TiDoubleclilckModule.m in Sources */ = {isa = PBXBuildFile; fileRef = A27FAAB813D07F4300FFE9B4 /* TiDoubleclilckModule.m */; };
-		A27FAABF13D07F4300FFE9B4 /* TiDoubleclickView.h in Headers */ = {isa = PBXBuildFile; fileRef = A27FAAB913D07F4300FFE9B4 /* TiDoubleclickView.h */; };
-		A27FAAC013D07F4300FFE9B4 /* TiDoubleclickView.m in Sources */ = {isa = PBXBuildFile; fileRef = A27FAABA13D07F4300FFE9B4 /* TiDoubleclickView.m */; };
-		A27FAAC113D07F4300FFE9B4 /* TiDoubleclickViewProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = A27FAABB13D07F4300FFE9B4 /* TiDoubleclickViewProxy.h */; };
-		A27FAAC213D07F4300FFE9B4 /* TiDoubleclickViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = A27FAABC13D07F4300FFE9B4 /* TiDoubleclickViewProxy.m */; };
 		A27FAACC13D0850B00FFE9B4 /* libGoogleAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A27FAACB13D0850B00FFE9B4 /* libGoogleAds.a */; };
 		AA747D9F0F9514B9006C5449 /* TiDoubleclick_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* TiDoubleclick_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
@@ -50,17 +50,17 @@
 
 /* Begin PBXFileReference section */
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
+		24FCBCFD141A4ECF00F2A9A9 /* TiDoubleclilckModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiDoubleclilckModule.m; path = Classes/TiDoubleclilckModule.m; sourceTree = "<group>"; };
+		24FCBCFE141A4ECF00F2A9A9 /* TiDoubleclickViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiDoubleclickViewProxy.m; path = Classes/TiDoubleclickViewProxy.m; sourceTree = "<group>"; };
+		24FCBCFF141A4ECF00F2A9A9 /* TiDoubleclickViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiDoubleclickViewProxy.h; path = Classes/TiDoubleclickViewProxy.h; sourceTree = "<group>"; };
+		24FCBD00141A4ECF00F2A9A9 /* TiDoubleclickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiDoubleclickView.m; path = Classes/TiDoubleclickView.m; sourceTree = "<group>"; };
+		24FCBD01141A4ECF00F2A9A9 /* TiDoubleclickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiDoubleclickView.h; path = Classes/TiDoubleclickView.h; sourceTree = "<group>"; };
+		24FCBD02141A4ECF00F2A9A9 /* TiDoubleclickModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiDoubleclickModule.h; path = Classes/TiDoubleclickModule.h; sourceTree = "<group>"; };
 		A27FAAAD13D07F0D00FFE9B4 /* GADAdSenseAudioParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADAdSenseAudioParameters.h; path = headers/GADAdSenseAudioParameters.h; sourceTree = "<group>"; };
 		A27FAAAE13D07F0D00FFE9B4 /* GADAdSenseParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADAdSenseParameters.h; path = headers/GADAdSenseParameters.h; sourceTree = "<group>"; };
 		A27FAAAF13D07F0D00FFE9B4 /* GADAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADAdViewController.h; path = headers/GADAdViewController.h; sourceTree = "<group>"; };
 		A27FAAB013D07F0D00FFE9B4 /* GADDoubleClickParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADDoubleClickParameters.h; path = headers/GADDoubleClickParameters.h; sourceTree = "<group>"; };
 		A27FAAB113D07F0D00FFE9B4 /* GADRequestError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADRequestError.h; path = headers/GADRequestError.h; sourceTree = "<group>"; };
-		A27FAAB713D07F4300FFE9B4 /* TiDoubleclickModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiDoubleclickModule.h; path = Classes/TiDoubleclickModule.h; sourceTree = "<group>"; };
-		A27FAAB813D07F4300FFE9B4 /* TiDoubleclilckModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiDoubleclilckModule.m; path = Classes/TiDoubleclilckModule.m; sourceTree = "<group>"; };
-		A27FAAB913D07F4300FFE9B4 /* TiDoubleclickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiDoubleclickView.h; path = Classes/TiDoubleclickView.h; sourceTree = "<group>"; };
-		A27FAABA13D07F4300FFE9B4 /* TiDoubleclickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiDoubleclickView.m; path = Classes/TiDoubleclickView.m; sourceTree = "<group>"; };
-		A27FAABB13D07F4300FFE9B4 /* TiDoubleclickViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiDoubleclickViewProxy.h; path = Classes/TiDoubleclickViewProxy.h; sourceTree = "<group>"; };
-		A27FAABC13D07F4300FFE9B4 /* TiDoubleclickViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiDoubleclickViewProxy.m; path = Classes/TiDoubleclickViewProxy.m; sourceTree = "<group>"; };
 		A27FAACB13D0850B00FFE9B4 /* libGoogleAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAds.a; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* TiDoubleclick_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiDoubleclick_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -112,12 +112,12 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				A27FAAB713D07F4300FFE9B4 /* TiDoubleclickModule.h */,
-				A27FAAB813D07F4300FFE9B4 /* TiDoubleclilckModule.m */,
-				A27FAAB913D07F4300FFE9B4 /* TiDoubleclickView.h */,
-				A27FAABA13D07F4300FFE9B4 /* TiDoubleclickView.m */,
-				A27FAABB13D07F4300FFE9B4 /* TiDoubleclickViewProxy.h */,
-				A27FAABC13D07F4300FFE9B4 /* TiDoubleclickViewProxy.m */,
+				24FCBCFD141A4ECF00F2A9A9 /* TiDoubleclilckModule.m */,
+				24FCBCFE141A4ECF00F2A9A9 /* TiDoubleclickViewProxy.m */,
+				24FCBCFF141A4ECF00F2A9A9 /* TiDoubleclickViewProxy.h */,
+				24FCBD00141A4ECF00F2A9A9 /* TiDoubleclickView.m */,
+				24FCBD01141A4ECF00F2A9A9 /* TiDoubleclickView.h */,
+				24FCBD02141A4ECF00F2A9A9 /* TiDoubleclickModule.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -156,9 +156,9 @@
 				A27FAAB413D07F0D00FFE9B4 /* GADAdViewController.h in Headers */,
 				A27FAAB513D07F0D00FFE9B4 /* GADDoubleClickParameters.h in Headers */,
 				A27FAAB613D07F0D00FFE9B4 /* GADRequestError.h in Headers */,
-				A27FAABD13D07F4300FFE9B4 /* TiDoubleclickModule.h in Headers */,
-				A27FAABF13D07F4300FFE9B4 /* TiDoubleclickView.h in Headers */,
-				A27FAAC113D07F4300FFE9B4 /* TiDoubleclickViewProxy.h in Headers */,
+				24FCBD05141A4ECF00F2A9A9 /* TiDoubleclickViewProxy.h in Headers */,
+				24FCBD07141A4ECF00F2A9A9 /* TiDoubleclickView.h in Headers */,
+				24FCBD08141A4ECF00F2A9A9 /* TiDoubleclickModule.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,9 +229,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A27FAABE13D07F4300FFE9B4 /* TiDoubleclilckModule.m in Sources */,
-				A27FAAC013D07F4300FFE9B4 /* TiDoubleclickView.m in Sources */,
-				A27FAAC213D07F4300FFE9B4 /* TiDoubleclickViewProxy.m in Sources */,
+				24FCBD03141A4ECF00F2A9A9 /* TiDoubleclilckModule.m in Sources */,
+				24FCBD04141A4ECF00F2A9A9 /* TiDoubleclickViewProxy.m in Sources */,
+				24FCBD06141A4ECF00F2A9A9 /* TiDoubleclickView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
