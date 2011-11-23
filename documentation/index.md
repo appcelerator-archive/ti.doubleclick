@@ -8,7 +8,7 @@ Provides access to Google/DoubleClick advertising services (DoubleClick and AdSe
 
 To access this module from JavaScript, you would do the following (recommended):
 
-	Titanium.DoubleClick = Ti.DoubleClick = require('ti.doubleclick');
+	var DoubleClick = require('ti.doubleclick');
 
 ## Functions
 

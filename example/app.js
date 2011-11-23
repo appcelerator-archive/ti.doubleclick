@@ -1,8 +1,8 @@
-Titanium.DoubleClick = Ti.DoubleClick = require('ti.doubleclick');
+var DoubleClick = require('ti.doubleclick');
 
 var win = Ti.UI.createWindow({ backgroundColor: '#fff' });
 
-var adView = Ti.DoubleClick.createView({
+var adView = DoubleClick.createView({
 		width: 300, height: 250,
 		adSize: '300x250',
 		keywords:'mo.appcelerator.app/test;site=appcelerator;' +
