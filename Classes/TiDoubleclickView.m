@@ -40,6 +40,9 @@
     else if ([adSize isEqualToString:@"300x50"]) {
         adController.adSize = kGADAdSize300x50;
     }
+	else if ([adSize isEqualToString:@"120x60"]) {
+		adController.adSize = kGADAdSize120x60;
+	}
     
 	adView = adController.view;
     

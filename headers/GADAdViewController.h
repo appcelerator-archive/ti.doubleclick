@@ -20,6 +20,7 @@ static GADAdSize const kGADAdSize320x50 = { 320, 50 };
 static GADAdSize const kGADAdSize300x250 = { 300, 250 };
 static GADAdSize const kGADAdSize300x50 = { 300, 50 };
 static GADAdSize const kGADAdSize180x150 = { 180, 150 };
+static GADAdSize const kGADAdSize120x60 = { 120, 60 };
 static GADAdSize const kGADAdSize88x31 = { 88, 31 };
 
 // Supported ad sizes for iPad only.
