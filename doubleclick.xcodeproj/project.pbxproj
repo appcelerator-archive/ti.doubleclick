@@ -112,12 +112,12 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				24FCBCFD141A4ECF00F2A9A9 /* TiDoubleclilckModule.m */,
-				24FCBCFE141A4ECF00F2A9A9 /* TiDoubleclickViewProxy.m */,
-				24FCBCFF141A4ECF00F2A9A9 /* TiDoubleclickViewProxy.h */,
-				24FCBD00141A4ECF00F2A9A9 /* TiDoubleclickView.m */,
-				24FCBD01141A4ECF00F2A9A9 /* TiDoubleclickView.h */,
 				24FCBD02141A4ECF00F2A9A9 /* TiDoubleclickModule.h */,
+				24FCBCFD141A4ECF00F2A9A9 /* TiDoubleclilckModule.m */,
+				24FCBCFF141A4ECF00F2A9A9 /* TiDoubleclickViewProxy.h */,
+				24FCBCFE141A4ECF00F2A9A9 /* TiDoubleclickViewProxy.m */,
+				24FCBD01141A4ECF00F2A9A9 /* TiDoubleclickView.h */,
+				24FCBD00141A4ECF00F2A9A9 /* TiDoubleclickView.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
