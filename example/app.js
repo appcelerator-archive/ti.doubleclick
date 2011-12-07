@@ -1,18 +1,19 @@
 var DoubleClick = require('ti.doubleclick');
+var u = Ti.Android != undefined ? 'dp' : 0;
 
 var win = Ti.UI.createWindow({ backgroundColor: '#fff' });
 
 var adView = DoubleClick.createView({
-    width: 300, height: 250,
-    adSize: '300x250',
-    keywords: 'mo.appcelerator.app/test;site=appcelerator;' +
-        'sect=test;' +
-        'sub2=loading;' +
-        'sub3=000000;' +
+    width: 120 + u, height: 60 + u,
+    adSize: '120x60',
+    keywords: 'mo.nbc.app/portal_loading;site=nbc;' +
+        'sect=portal;' +
+        'sub=loading;' +
         'mdeck=1;' +
-        'type=ipad;!c=app;!c=ipad;!c=appcelerator;!c=test;' +
-        'size=180x150;' +
-        'pos=2',
+        'type=iphone;' +
+        '!c=app;!c=iphone;!c=nbc;!c=portal;' +
+        'size=120x60;' +
+        'pos=1',
     trackImpression: true
 });
 adView.addEventListener('onadload', function (evt) {
@@ -24,8 +25,6 @@ adView.addEventListener('onadfail', function (evt) {
 adView.addEventListener('onadclick', function (evt) {
     alert('onadclick!');
 });
-win.addEventListener('open', function (evt) {
-    win.add(adView);
-});
+win.add(adView);
 
 win.open();
