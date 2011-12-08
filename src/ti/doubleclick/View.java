@@ -9,6 +9,7 @@ import org.appcelerator.kroll.KrollDict;
 import org.appcelerator.titanium.proxy.TiViewProxy;
 import org.appcelerator.titanium.util.TiConvert;
 import org.appcelerator.titanium.view.TiUIView;
+import org.appcelerator.titanium.TiApplication;
 
 import com.google.ads.AdViewListener;
 import com.google.ads.DoubleClickSpec.SizeProfile;
@@ -26,7 +27,8 @@ public class View extends TiUIView {
 
 	private GoogleAdView createAd() {
 
-		final GoogleAdView adView = new GoogleAdView(proxy.getContext());
+		final GoogleAdView adView = new GoogleAdView(TiApplication.getInstance().getApplicationContext());
+		// adView.setVisibility(android.view.View.GONE);
 
 		KrollDict props = proxy.getProperties();
 		String keywords = props.getString("keywords");
