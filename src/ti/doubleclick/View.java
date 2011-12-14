@@ -15,6 +15,8 @@ import com.google.ads.AdViewListener;
 import com.google.ads.DoubleClickSpec.SizeProfile;
 import com.google.ads.GoogleAdView;
 
+import java.util.HashMap;
+
 public class View extends TiUIView {
 
 	public View(TiViewProxy proxy) {
@@ -54,19 +56,19 @@ public class View extends TiUIView {
 			@Override
 			public void onAdFetchFailure() {
 				isAdLoadSuccessful = false;
-				proxy.fireEvent("onadfail", new KrollDict());
+				proxy.fireEvent("onadfail", new HashMap());
 			}
 
 			@Override
 			public void onFinishFetchAd() {
 				if (isAdLoadSuccessful) {
-					proxy.fireEvent("onadload", new KrollDict());
+					proxy.fireEvent("onadload", new HashMap());
 				}
 			}
 
 			@Override
 			public void onClickAd() {
-				proxy.fireEvent("onadclick", new KrollDict());
+				proxy.fireEvent("onadclick", new HashMap());
 			}
 
 		});
