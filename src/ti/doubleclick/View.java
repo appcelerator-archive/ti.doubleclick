@@ -29,7 +29,7 @@ public class View extends TiUIView {
 
 	private GoogleAdView createAd() {
 
-		final GoogleAdView adView = new GoogleAdView(TiApplication.getInstance().getApplicationContext());
+		final GoogleAdView adView = new GoogleAdView(TiApplication.getInstance().getCurrentActivity());
 		// adView.setVisibility(android.view.View.GONE);
 
 		KrollDict props = proxy.getProperties();
