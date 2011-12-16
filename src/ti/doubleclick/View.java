@@ -43,7 +43,7 @@ public class View extends TiUIView {
 
 		adView.setAdViewListener(new AdViewListener() {
 
-			private boolean isAdLoadSuccessful;
+			private boolean adLoadFailed = false;
 
 			@Override
 			public void onStartFetchAd() {
@@ -51,13 +51,13 @@ public class View extends TiUIView {
 
 			@Override
 			public void onAdFetchFailure() {
-				isAdLoadSuccessful = false;
+				adLoadFailed = true;
 				proxy.fireEvent("onadfail", new KrollDict());
 			}
 
 			@Override
 			public void onFinishFetchAd() {
-				if (isAdLoadSuccessful) {
+				if (!adLoadFailed) {
 					proxy.fireEvent("onadload", new KrollDict());
 				}
 			}
