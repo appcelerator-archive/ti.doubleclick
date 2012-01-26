@@ -76,7 +76,7 @@
 {
     
     if ([self.proxy _hasListeners:@"onadfail"]) {
-        [self.proxy fireEvent:@"onadfail" withObject:[NSDictionary dictionaryWithObjectsAndKeys:error, @"error", nil]];
+        [self.proxy fireEvent:@"onadfail" withObject:[NSDictionary dictionaryWithObjectsAndKeys:[error localizedDescription], @"error", nil]];
     }
     // NSLog(@"[ERROR] There was an error loading the DoubleClick AD.");
     // NSLog(@"[ERROR] ERROR: %@", error);
