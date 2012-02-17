@@ -13,6 +13,7 @@
 
 - (void)dealloc 
 {    
+	RELEASE_TO_NIL(adController);
 	[super dealloc];
 }
 
@@ -58,26 +59,30 @@
 	// NSLog(@"[DEBUG] Created a DoubleClick AD. Setting size to: %@", adSize);
 }
 
-- (void)loadSucceeded:(GADAdViewController*)adController withResults:(NSDictionary*)results 
+- (void)loadSucceeded:(GADAdViewController*)adControllerInstance withResults:(NSDictionary*)results 
 {    
-    adView.frame = [super bounds];
+    if (adController != nil) {
+		adView.frame = [super bounds];
     
-	[super addSubview:adView];
+		[super addSubview:adView];
     
-    if ([self.proxy _hasListeners:@"onadload"]) {
-        [self.proxy fireEvent:@"onadload" withObject:results];
-    }
+	    if ([self.proxy _hasListeners:@"onadload"]) {
+	        [self.proxy fireEvent:@"onadload" withObject:results];
+	    }
+	}
     
     // NSLog(@"[DEBUG] We received a DoubleClick AD. Set size to: %@", [self.proxy valueForKey:@"adSize"]);
     // NSLog(@"[DEBUG] Response: %@", results);
 }
 
-- (void)loadFailed:(GADAdViewController*)adController withError:(NSError*)error 
+- (void)loadFailed:(GADAdViewController*)adControllerInstance withError:(NSError*)error 
 {
     
-    if ([self.proxy _hasListeners:@"onadfail"]) {
-        [self.proxy fireEvent:@"onadfail" withObject:[NSDictionary dictionaryWithObjectsAndKeys:[error localizedDescription], @"error", nil]];
-    }
+    if (adController != nil) {
+		if ([self.proxy _hasListeners:@"onadfail"]) {
+	        [self.proxy fireEvent:@"onadfail" withObject:[NSDictionary dictionaryWithObjectsAndKeys:[error localizedDescription], @"error", nil]];
+	    }
+	}
     // NSLog(@"[ERROR] There was an error loading the DoubleClick AD.");
     // NSLog(@"[ERROR] ERROR: %@", error);
 }
