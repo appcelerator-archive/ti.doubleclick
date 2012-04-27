@@ -1,13 +1,13 @@
 var DoubleClick = require('ti.doubleclick');
 var u = Ti.Android != undefined ? 'dp' : 0;
 
-var win = Ti.UI.createWindow({ backgroundColor:'#fff' });
+var win = Ti.UI.createWindow({ backgroundColor: '#fff' });
 
 var adView = DoubleClick.createView({
-    width:120 + u, height:60 + u,
-    adSize:'120x60',
+    width: 300 + u, height: 250 + u,
+    adSize: '300x250',
     keywords:'<< YOUR KEYWORWDS HERE >>',
-    trackImpression:true
+    trackImpression: true
 });
 adView.addEventListener('onadload', function (evt) {
     alert('onadload!');
