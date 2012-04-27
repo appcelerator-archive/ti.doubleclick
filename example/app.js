@@ -6,15 +6,7 @@ var win = Ti.UI.createWindow({ backgroundColor: '#fff' });
 var adView = DoubleClick.createView({
     width: 300 + u, height: 250 + u,
     adSize: '300x250',
-    keywords: 'mo.appcelerator.app/test;site=appcelerator;' +
-        'sect=test;' +
-        'sub2=loading;' +
-        'sub3=000000;' +
-        'mdeck=1;' +
-        'type=ipad;' +
-        '!c=app;!c=ipad;!c=appcelerator;!c=test;' +
-        'size=180x150;' +
-        'pos=2',
+    keywords:'<< YOUR KEYWORWDS HERE >>',
     trackImpression: true
 });
 adView.addEventListener('onadload', function (evt) {
