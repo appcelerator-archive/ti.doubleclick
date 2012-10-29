@@ -5,7 +5,9 @@
  * and licensed under the Apache Public License (version 2)
  */
 #import "TiModule.h"
- 
-@interface TiDoubleclickModule : TiModule {}
+
+@interface TiDoubleclickModule : TiModule 
+{
+}
 
 @end
