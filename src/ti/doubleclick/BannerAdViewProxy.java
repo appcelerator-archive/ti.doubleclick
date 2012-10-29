@@ -1,6 +1,6 @@
 /**
  * Ti.DoubleClick Module
- * Copyright (c) 2010-2011 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2010-2012 by Appcelerator, Inc. All Rights Reserved.
  * Please see the LICENSE included with this distribution for details.
  */
 package ti.doubleclick;
@@ -12,12 +12,11 @@ import org.appcelerator.titanium.view.TiUIView;
 
 import android.app.Activity;
 
-// This proxy can be created by calling Doubleclick.createExample({message: "hello world"})
 @Kroll.proxy(creatableInModule = DoubleclickModule.class)
-public class ViewProxy extends TiViewProxy {
+public class BannerAdViewProxy extends TiViewProxy {
 
 	@Override
 	public TiUIView createView(Activity activity) {
-		return new View(this);
+		return new BannerAdView(this);
 	}
 }
