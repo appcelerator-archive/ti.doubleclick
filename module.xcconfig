@@ -17,7 +17,7 @@
 // OTHER_LDFLAGS[sdk=iphoneos4*]=$(inherited) -framework Foo
 // OTHER_LDFLAGS[sdk=iphonesimulator4*]=$(inherited) -framework Foo
 //
-OTHER_LDFLAGS=$(inherited) -framework AudioToolbox -framework MessageUI -framework SystemConfiguration -framework AdSupport
+OTHER_LDFLAGS=$(inherited) -framework AudioToolbox -framework MessageUI -framework SystemConfiguration -weak_framework AdSupport
 //
 // How to add a compiler define:
 //

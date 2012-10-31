@@ -62,7 +62,7 @@
 		A29919A91636F6C100E1F9DE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29919A41636F6C100E1F9DE /* MessageUI.framework */; };
 		A29919AA1636F6C100E1F9DE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29919A51636F6C100E1F9DE /* StoreKit.framework */; };
 		A29919AB1636F6C100E1F9DE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29919A61636F6C100E1F9DE /* SystemConfiguration.framework */; };
-		A29919AD1636F6C800E1F9DE /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29919AC1636F6C800E1F9DE /* AdSupport.framework */; };
+		A29919AD1636F6C800E1F9DE /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29919AC1636F6C800E1F9DE /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		AA747D9F0F9514B9006C5449 /* TiDoubleclick_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* TiDoubleclick_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
