@@ -11,6 +11,26 @@ advertising network
 View the [Using Titanium Modules](http://docs.appcelerator.com/titanium/latest/#!/guide/Using_Titanium_Modules) document for instructions on getting
 started with using this module in your application.
 
+## Requirements
+
+The Google AdMob Ads SDK has the following requirements:
+
+* iOS version 4.3 or later
+* Xcode 4.5 or later
+
+The SDK also requires that the following frameworks are available when you build your application:
+
+* StoreKit
+* AudioToolbox
+* MessageUI
+* SystemConfiguration
+* CoreGraphics
+* <strong>AdSupport</strong>
+
+Note that the `AdSupport` framework is a new framework introduced with the iOS6 SDK. The `module.xcconfig` file references
+this framework as a "weak link" framework (`-weak_framework AdSupport`) so that you can still run your application
+on earlier versions of iOS. However, it is still necessary for this framework to be available at time the applicatino is built.
+
 ## Accessing the Ti.DoubleClick Module
 
 To access this module from JavaScript, you would do the following (recommended):
