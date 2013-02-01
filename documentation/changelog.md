@@ -1,5 +1,7 @@
 # Change Log
 <pre>
+v3.0.2  Added attribution [MOD-1087]
+
 v3.0.1  Fixed link issue with AdSupport framework when using iOS SDK prior to 6.0
 
 v3.0.0  Upgraded to Google Doubleclick for Publishers (version 6.2.1)
