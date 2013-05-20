@@ -1,5 +1,7 @@
 # Change Log
 <pre>
+v3.1.0  Upgraded DoubleClick SDK (version 6.4.1)(No longer uses UDID) [MOD-1372]
+
 v3.0.2  Added attribution [MOD-1087]
 
 v3.0.1  Fixed link issue with AdSupport framework when using iOS SDK prior to 6.0
