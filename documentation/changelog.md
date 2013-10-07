@@ -1,5 +1,7 @@
 # Change Log
 <pre>
+v3.1.1  Fixed issue with app events not being triggered for banner ads [MOD-1565]
+
 v3.1.0  Upgraded DoubleClick SDK (version 6.4.1)(No longer uses UDID) [MOD-1372]
 
 v3.0.2  Added attribution [MOD-1087]

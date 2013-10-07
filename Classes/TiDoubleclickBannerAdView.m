@@ -96,7 +96,7 @@
 
 // Called when a DFP creative invokes an app event. This method only
 // needs to be implemented if your creative makes use of app events.
-- (void)didReceiveAppEvent:(NSString *)name withInfo:(NSString *)info {
+- (void)adView:(GADBannerView*)view didReceiveAppEvent:(NSString *)name withInfo:(NSString *)info {
     NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys:
                            info, name,
                            nil];
