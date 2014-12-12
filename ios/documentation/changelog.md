@@ -1,6 +1,6 @@
 # Change Log
 <pre>
-v3.2.0  Updated module to 64-bit architecture
+v3.2.0  Updated module to support 64-bit [TIMOB-18092]
 
 v3.1.1  Fixed issue with app events not being triggered for banner ads [MOD-1565]
 

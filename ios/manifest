@@ -3,7 +3,7 @@
 # during compilation, packaging, distribution, etc.
 #
 version: 3.2.0
-architectures: armeabi armeabi-v7a x86
+architectures: armv7 i386 x86_64 arm64
 description: DoubleClick for Publishers
 author: Jeff English
 license: Appcelerator Commercial License
@@ -14,4 +14,4 @@ name: doubleclick
 moduleid: ti.doubleclick
 guid: e35390af-1aa9-4416-ba22-88a3b1a50108
 platform: iphone
-minsdk: 3.4.1
+minsdk: 3.4.1.GA
