@@ -61,9 +61,9 @@
     [_ad presentFromRootViewController:[[TiApp app] controller]];
 }
 
--(BOOL)isReady
+-(id)isReady
 {
-    return [_ad isReady];
+    return NUMBOOL([_ad isReady]);
 }
 
 #pragma mark interstitialAd Delegate
