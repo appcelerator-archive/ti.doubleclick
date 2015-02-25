@@ -4,6 +4,7 @@
 #
 version: 3.0.1
 apiversion: 2
+architectures: armeabi armeabi-v7a x86
 description: DoubleClick for Publishers
 author: Jeff English
 license: Appcelerator Commercial License
