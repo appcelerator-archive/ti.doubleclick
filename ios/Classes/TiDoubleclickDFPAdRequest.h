@@ -6,7 +6,6 @@
 
 #import <Foundation/Foundation.h>
 #import "TiProxy.h"
-#import "DFPExtras.h"
 #import "GADRequest.h"
 #import "GADAdSize.h"
 
@@ -18,7 +17,6 @@
 }
 
 -(id)initWithProxy:(TiProxy*)proxy;
--(void)setupTesting:(TiProxy*)proxy;
 +(NSString*)setupAdUnitId:(TiProxy*)proxy;
 +(GADAdSize)setupAdSize:(TiProxy*)proxy;
 +(NSArray*)setupValidAdSizes:(TiProxy*)proxy;

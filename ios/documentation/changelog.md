@@ -1,5 +1,7 @@
 # Change Log
 <pre>
+v3.2.0  Updated module to support 64-bit, including v7.0.0 of DoubleClick SDK [MOD-2084]
+
 v3.1.1  Fixed issue with app events not being triggered for banner ads [MOD-1565]
 
 v3.1.0  Upgraded DoubleClick SDK (version 6.4.1)(No longer uses UDID) [MOD-1372]
