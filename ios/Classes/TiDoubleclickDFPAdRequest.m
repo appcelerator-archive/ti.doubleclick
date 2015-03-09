@@ -8,7 +8,7 @@
 #import "TiApp.h"
 #import "TiUtils.h"
 #import "TiProxy.h"
-#import "DFPExtras.h"
+#import "GADExtras.h"
 #import "GADAdSize.h"
 
 @implementation TiDoubleclickDFPAdRequest
@@ -29,7 +29,6 @@ DEFINE_EXCEPTIONS
 -(id)initWithProxy:(TiProxy*)proxy
 {
     if (self = [super init]) {
-        [self setupTesting:proxy];
         [self setupCustomTargeting:proxy];
         [self setupLocationTargeting:proxy];
         [self setupAdColors:proxy];
@@ -51,7 +50,7 @@ DEFINE_EXCEPTIONS
     // Return a request object ready for setting in DoubleClick. To do this we take the extras object and add
     // it to the request object.
     if (!extrasSet) {
-        DFPExtras* extras = [[[DFPExtras alloc] init] autorelease];
+        GADExtras* extras = [[[GADExtras alloc] init] autorelease];
         extras.additionalParameters = _extras;
         [_request registerAdNetworkExtras:extras];
         extrasSet = YES;
@@ -75,15 +74,6 @@ DEFINE_EXCEPTIONS
     THROW_INVALID_ARG(@"adSize dictionary must contain 'width' and 'height' properties");
     
     return kGADAdSizeBanner;
-}
-
--(void)setupTesting:(TiProxy*)proxy
-{
-    BOOL testing = [TiUtils boolValue:[proxy valueForKey:@"testing"] def:NO];
-    if (testing) {
-        NSLog(@"[DEBUG] >>> TESTING <<<");
-        _request.testing = testing;
-    }
 }
 
 +(NSString*)setupAdUnitId:(TiProxy*)proxy

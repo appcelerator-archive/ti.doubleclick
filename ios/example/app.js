@@ -1,5 +1,5 @@
 var DoubleClick = require('ti.doubleclick');
-var u = Ti.Android != undefined ? 'dp' : 0;
+var u = Ti.Android ? 'dp' : 0;
 
 var win = Ti.UI.createWindow({
 	backgroundColor:'white'
@@ -12,7 +12,7 @@ var ad;
 win.add(ad = DoubleClick.createBannerAdView({
 	top:0, left:0,
 	width:320 + u, height:50 + u,
-	adUnitId:'<< YOUR AD UNIT ID HERE >>', // Eg. '/6253334/dfp_example_ad/multisize'
+	adUnitId:'<< YOUR AD UNIT ID HERE >>', // in the format ca-app-pub-XXXXXXXXXXXXXXXX/NNNNNNNNNN
 	adSize:{ width:320, height:50 },
 	// If set up to server multiple ad sizes, specify the valid adsizes here
 	//validAdSizes: [
@@ -33,7 +33,7 @@ ad.addEventListener('didReceiveAd', function ()
 });
 ad.addEventListener('didFailToReceiveAd', function (e)
 {
-	Ti.API.error('ERROR: ' + e.error)
+	Ti.API.error('ERROR: ' + e.error);
 	alert('Failed to receive ad!');
 });
 ad.addEventListener('willPresentScreen', function ()
@@ -63,21 +63,34 @@ ad.addEventListener('willChangeAdSizeTo', function (e)
 
 /*
  And we'll try to get the user's location for this second ad!
+ 
+ Note: Starting with iOS 8, you must add the NSLocationAlwaysUsageDescription
+ or the NSLocationWhenInUseUsageDescription key to your tiapp.xml in order
+ to access location services:
+ 
+    <ios>
+        <plist>
+            <dict>
+				<key>NSLocationAlwaysUsageDescription</key>
+				<string>To show you local ads, of course!</string>
+				...
+				...
+			</dict>
+		</plist>
+	</ios>
  */
 
 Ti.Geolocation.accuracy = Ti.Geolocation.ACCURACY_BEST;
 Ti.Geolocation.distanceFilter = 0;
-Ti.Geolocation.purpose = 'To show you local ads, of course!';
 Ti.Geolocation.getCurrentPosition(function reportPosition(e)
 {
 	if (!e.success || e.error) {
-		// aw, shucks...
-	}
-	else {
+		alert('Failed to receive location.');
+	} else {
 		win.add(DoubleClick.createBannerAdView({
 			top:100, left:0,
 			width:320 + u, height:50 + u,
-			adUnitId:'<< YOUR AD UNIT ID HERE >>', // Eg. '/6253334/dfp_example_ad/banner'
+			adUnitId: '<< YOUR AD UNIT ID HERE >>', // in the format ca-app-pub-XXXXXXXXXXXXXXXX/NNNNNNNNNN
 			adSize:{ width:320, height:50 },
 			testing:true,
 			location:e.coords
@@ -100,7 +113,7 @@ win.open();
  */
 
 var iad = DoubleClick.createInterstitialAd({
-	adUnitId:'<< YOUR AD UNIT ID HERE >>', // Eg. '/6253334/dfp_example_ad/interstitial'
+	adUnitId: '<< YOUR AD UNIT ID HERE >>', // in the format ca-app-pub-XXXXXXXXXXXXXXXX/NNNNNNNNNN
 	testing:true
 	// Interstitial ad is automatically displayed unless you set presentAd to false.
 	//, presentAd: false
@@ -115,7 +128,7 @@ iad.addEventListener('didReceiveAd', function ()
 });
 iad.addEventListener('didFailToReceiveAd', function (e)
 {
-	Ti.API.error('ERROR: ' + e.error)
+	Ti.API.error('ERROR: ' + e.error);
 	alert('Failed to receive ad!');
 });
 iad.addEventListener('willPresentScreen', function ()

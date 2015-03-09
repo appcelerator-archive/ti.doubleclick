@@ -1,0 +1,17 @@
+build/*
+build
+build.log
+*.class
+*.pyc
+*.pyo
+tmp
+.DS_Store
+.svn
+.svnignore
+Instruments.trace/*
+*.jar
+*.so
+*.zip
+*.xccheckout
+ios/doubleclick.xcodeproj/xcuserdata/*
+ios/doubleclick.xcodeproj/project.xcworkspace/xcuserdata/*

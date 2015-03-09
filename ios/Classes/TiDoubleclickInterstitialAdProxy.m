@@ -34,7 +34,6 @@
     // supports the ability to add targeting information. If it is
     // added in the future then it may be as simple as using the initWithProxy constructor.
     TiDoubleclickDFPAdRequest* adRequest = [[[TiDoubleclickDFPAdRequest alloc] init] autorelease];
-    [adRequest setupTesting:self];
     NSString* adUnitId = [TiDoubleclickDFPAdRequest setupAdUnitId:self];
 
     _ad = [[DFPInterstitial alloc] init];
@@ -61,9 +60,9 @@
     [_ad presentFromRootViewController:[[TiApp app] controller]];
 }
 
--(BOOL)isReady
+-(NSNumber*)isReady
 {
-    return [_ad isReady];
+    return NUMBOOL([_ad isReady]);
 }
 
 #pragma mark interstitialAd Delegate
